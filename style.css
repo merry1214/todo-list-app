@@ -1,0 +1,162 @@
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", Arial, sans-serif;
+}
+
+body {
+  background: linear-gradient(135deg, #89f7fe, #66a6ff);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* === Container === */
+.container {
+  background-color: #fff;
+  width: 90%;
+  max-width: 450px;
+  padding: 25px 30px;
+  border-radius: 16px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+  transition: 0.3s ease;
+}
+
+.container:hover {
+  transform: translateY(-3px);
+}
+
+/* === Heading === */
+h1 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 20px;
+  font-size: 28px;
+  letter-spacing: 1px;
+}
+
+/* === Input Section === */
+.input-section {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+#taskInput {
+  flex: 1;
+  padding: 12px;
+  border: 2px solid #ddd;
+  border-radius: 8px;
+  font-size: 15px;
+  outline: none;
+  transition: border-color 0.3s ease;
+}
+
+#taskInput:focus {
+  border-color: #66a6ff;
+}
+
+#addBtn {
+  padding: 12px 20px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: 0.3s ease;
+}
+
+#addBtn:hover {
+  background-color: #45a049;
+}
+
+/* === Task List === */
+ul {
+  list-style-type: none;
+  max-height: 300px;
+  overflow-y: auto;
+  padding-right: 5px;
+}
+
+li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #f5f5f5;
+  margin-bottom: 10px;
+  padding: 12px 15px;
+  border-radius: 10px;
+  transition: 0.3s ease;
+}
+
+li:hover {
+  background-color: #eaf3ff;
+}
+
+li span {
+  flex: 1;
+  font-size: 16px;
+  color: #333;
+  cursor: pointer;
+}
+
+/* === Buttons in List === */
+li button {
+  border: none;
+  background: #66a6ff;
+  color: white;
+  padding: 7px 12px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 13px;
+  font-weight: 500;
+  margin-left: 5px;
+  transition: background 0.3s ease;
+}
+
+li button:hover {
+  background: #4b8ce8;
+}
+
+/* === Delete Button Special Style === */
+li button:last-child {
+  background: #ff4d4d;
+}
+
+li button:last-child:hover {
+  background: #e04343;
+}
+
+/* === Scrollbar Styling === */
+ul::-webkit-scrollbar {
+  width: 6px;
+}
+
+ul::-webkit-scrollbar-thumb {
+  background-color: #bbb;
+  border-radius: 10px;
+}
+
+ul::-webkit-scrollbar-thumb:hover {
+  background-color: #999;
+}
+
+/* === Responsive === */
+@media (max-width: 480px) {
+  .container {
+    padding: 20px;
+  }
+
+  h1 {
+    font-size: 22px;
+  }
+
+  #addBtn {
+    padding: 10px;
+  }
+}
