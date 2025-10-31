@@ -19,4 +19,3 @@ A simple Todo List application built using **HTML**, **CSS**, and **JavaScript**
 Developed by Meron Bahru
 
 ---
-<img width="1919" height="989" alt="image" src="https://github.com/user-attachments/assets/b5f9b2fb-7276-4bb5-841e-9b5377277b1f" />
